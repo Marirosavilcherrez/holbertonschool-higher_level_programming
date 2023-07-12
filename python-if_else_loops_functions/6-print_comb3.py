@@ -5,4 +5,4 @@ for i in range(0, 9):
             if (i != 8):
                 print("{}, ".format(str(i)+str(j)), end='')
             else:
-                print("{}".format(str(i)+str(j))')
+                print("{}".format(str(i)+str(j)))
