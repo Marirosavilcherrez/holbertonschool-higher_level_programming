@@ -15,5 +15,5 @@ class Square:
                 self.__size = size
         except TypeError as i:
             raise i
-        except ValueError as i:
-            raise i
+        except ValueError as j:
+            raise j
