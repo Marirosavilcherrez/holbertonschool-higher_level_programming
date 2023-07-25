@@ -7,8 +7,8 @@ def add_integer(a, b=98):
 	>>> add_integer(2, 3)
 	5
 	
-	>>> add_integer(5.1, 8)
-	13
+	>>> add_integer(0, 98)
+	98
 
 	>>> add_integer(3.1, "Hi")
         Traceback (most recent call last):
@@ -28,8 +28,8 @@ def add_integer(a, b=98):
         Traceback (most recent call last):
 	TypeError: b must be an integer
 
-	>>> add_integer(5, 0)
-        5
+	>>> add_integer(5.5, 4.5)
+        9
 
 	"""
 	return (a + b)
