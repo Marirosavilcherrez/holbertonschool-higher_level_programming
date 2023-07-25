@@ -33,7 +33,7 @@ def add_integer(a, b):
 	>>> add_integer(5.5, 4.5)
         9
 
-	>>> add_integer(8)
+	>>> add_integer(1)
         1
 
 	>>> a = float("inf")
