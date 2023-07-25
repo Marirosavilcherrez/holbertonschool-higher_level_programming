@@ -1,4 +1,4 @@
-def add_integer(a, b=98):
+def add_integer(a, b):
 	"""
 	This function sum 2 integers an return the result
 	integer
