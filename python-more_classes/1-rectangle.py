@@ -4,6 +4,7 @@
 
 
 class Rectangle:
+    "Simple Rectangle class"
     def __init__(self, width=0, height=0):
         """This is a constructor.
         Args:
