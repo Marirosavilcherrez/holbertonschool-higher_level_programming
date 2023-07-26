@@ -76,4 +76,4 @@ class Rectangle:
                     rectangle_str += "#"
                 rectangle_str += "\n"
             rectangle_str = rectangle_str.rstrip("\n")
-            return(rectangle_str)
+            return (rectangle_str)
