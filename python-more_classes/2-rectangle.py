@@ -63,7 +63,7 @@ class Rectangle:
         width = self.width
         height = self.height
         perim = (2 * width) + (2 * height)
-        if width == 0:
+        if width == 0 or height == 0:
             return (0)
         else:
             return (perim)
