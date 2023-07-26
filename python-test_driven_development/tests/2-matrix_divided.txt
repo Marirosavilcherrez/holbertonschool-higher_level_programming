@@ -1,0 +1,28 @@
+def matrix_divided(matrix, div):
+	"""
+	This function divide a matrix and a div an return the result
+	float with 2 decimals
+	
+	>>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+	>>> matrix = [[1, 2, 3], [4, 5, 6]]
+
+	>>> matrix_divided(matrix, 0)
+	Traceback (most recent call last):
+        ZeroDivisionError: division by zero
+	
+	>>> matrix_divided(matrix, 'a')
+        Traceback (most recent call last):
+        TypeError: div must be a number
+
+	>>> matrix_divided(matrix, 4)
+        [[0.25, 0.5, 0.75], [1.0, 1.25, 1.5]]
+
+	>>> matrix_divided(matrix, 'Holberston')
+        Traceback (most recent call last):
+        TypeError: div must be a number
+
+
+
+	"""
+	return (new_matrix)
+	
