@@ -11,12 +11,12 @@ class Rectangle:
         Size: side of rectangle"""
         self.width = width
         self.height = height
-        
+
     @property
     def width(self):
         """Propertie to retrieve it"""
         return (self.__width)
-        
+
     @width.setter
     def width(self, value):
         """Class methods are similar to regular functions.
@@ -33,12 +33,12 @@ class Rectangle:
         if value < 0:
             raise ValueError("width must be >= 0")
         self.__width = value
-        
+
     @property
     def height(self):
         """Propertie to retrieve it"""
         return (self.__height)
-        
+
     @height.setter
     def height(self, value):
         """Class methods are similar to regular functions.
