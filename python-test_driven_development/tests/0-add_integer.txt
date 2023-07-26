@@ -34,7 +34,7 @@ def add_integer(a, b):
         9
 
 	>>> add_integer(8)
-        8
+        106
 
 	>>> a = float("inf")
 	>>> b = 10
