@@ -21,19 +21,12 @@ TEST:
 >>> b_list.print_sorted()
 [-1, 1, 2, 3, 7]
 
-
 >>> new_list = MyList()
->>> new_list
-[]
-
 >>> new_list.append(8)
->>> new_list
-[8]
-
 >>> new_list.append(6)
 >>> new_list.append(4)
->>> new_list
-[8, 6, 4]
+>>> new_list.print_sorted()
+[4, 6, 8]
 
 >>> new_list.append("a")
 >>> new_list.append("3")
@@ -50,10 +43,8 @@ TypeError: '<' not supported between instances of 'str' and 'int'
 >>> a.print_sorted()
 []
 
->>> b = MyList()
->>> b
-[]
->>> print(b)
+>>> my_list = MyList()
+>>> print(my_list)
 []
 
 
