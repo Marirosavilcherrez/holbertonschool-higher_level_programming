@@ -4,4 +4,5 @@ of an object"""
 
 
 def lookup(obj):
+    "Simple function inheritance"
     return (dir(obj))
