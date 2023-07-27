@@ -50,3 +50,10 @@ TypeError: '<' not supported between instances of 'str' and 'int'
 >>> a.print_sorted()
 []
 
+>>> b = MyList()
+>>> b
+[]
+>>> print(b)
+[]
+
+
