@@ -13,7 +13,32 @@ TEST:
 Traceback (most recent call last):
 TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
 
->>> bg.integer_validator("School", -7)
+>>> bg.integer_validator("number", 0)
 Traceback (most recent call last):
-ValueError: School must be greater than 0
+ValueError: number must be greater than 0
 
+>>> bg.integer_validator("number", "4")
+Traceback (most recent call last):
+TypeError: number must be an integer
+
+>>> bg.integer_validator("number", -7)
+Traceback (most recent call last):
+ValueError: number must be greater than 0
+
+>>> bg.integer_validator("number", (4,))
+Traceback (most recent call last):
+TypeError: number must be an integer
+
+>>> bg.integer_validator("number", [3])
+Traceback (most recent call last):
+TypeError: number must be an integer
+
+>>> bg.integer_validator("number", True)
+
+>>> bg.integer_validator("number", {3, 4})
+Traceback (most recent call last):
+TypeError: number must be an integer
+
+>>> bg.integer_validator("number", None)
+Traceback (most recent call last):
+TypeError: number must be an integer
