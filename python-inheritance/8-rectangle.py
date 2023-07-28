@@ -10,8 +10,7 @@ class Rectangle(BaseGeometry):
         """This is a constructor.
         Arg:
             widht: of the rectangle
-            height: of the rectangle
-            """      
+            height: of the rectangle"""      
         self.__width = width
         self.__height = height
         self.integer_validator("width", self.__width)
