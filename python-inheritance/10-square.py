@@ -10,4 +10,6 @@ class Square(Rectangle):
         """This is a constructor.
         Arg:
         size: of the rectangle"""
+        self.integer_validator("size", size)
         super().__init__(size, size)
+        self.__size = size
