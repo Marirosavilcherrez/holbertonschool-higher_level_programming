@@ -8,17 +8,17 @@ the division matrix and div.
 def matrix_divided(matrix, div):
     """Return the division of a matrix and a div,
     return a float with 2 decimals."""
-    if not all(isinstance(row, list) and all(isinstance(element, (int, float)) for element in row) for row in matrix):
+    if type(matrix) is not list or (len(matrix) == 0) or type(matrix[0]) is not list or (len(matrix[0]) == 0):
         raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
-    row_size = len(matrix[0])
-    if not all (len(row) == row_size for row in matrix):
-        raise TypeError("Each row of the matrix must have the same size")
-    if not isinstance(div, (int, float)):
+    if type(div) is not int and type(div) is not float:
         raise TypeError("div must be a number")
     if div == 0:
         raise ZeroDivisionError("division by zero")
-    else:
-        new_matrix = []
-        for i in matrix:
-            new_matrix.append(list(map(lambda x: round(x / div, 2), i)))
-        return (new_matrix)
+    for row in matrix:
+        if type(row) is not list:
+            raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
+        for i in row:
+            if type(i) is not int and type(i) is not float:
+                raise TypeError("matrix must be a matrix (list of lists) of \
+                    integers/floats")
+    return [[round(item / div, 2) for item in row]for row in matrix]
