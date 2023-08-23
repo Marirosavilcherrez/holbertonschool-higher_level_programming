@@ -1,7 +1,7 @@
 -- Script that import database from a table dump
 
-SELECT city, AVG((temperature * 9/5) + 32) AS avg_temperature_fahrenheit
+SELECT temperatures.city, 
+AVG(temperatures.value) AS average
 FROM temperatures
-GROUP BY city
-ORDER BY avg_temperature_fahrenheit DESC;
-
+GROUP BY temperatures.city
+ORDER BY average DESC;
