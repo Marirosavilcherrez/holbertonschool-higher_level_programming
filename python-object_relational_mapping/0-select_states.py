@@ -1,5 +1,8 @@
 #!/usr/bin/python3
-# This is a Without ORM that lists all states from the database hbtn_0e_0_usa
+"""
+This is a Without ORM that lists all states from the database hbtn_0e_0_usa
+"""
+
 import MySQLdb
 
 # Stablish conexion with the data base
