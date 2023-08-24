@@ -2,6 +2,7 @@
 """This is a Without ORM that lists all states from the database hbtn_0e_0_usa"""
 import MySQLdb
 
+"""Conect MySql with Python"""
 conn = MySQLdb.connect(
         host = "localhost",
         port = 3306,
