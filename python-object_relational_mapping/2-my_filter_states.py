@@ -20,6 +20,7 @@ if __name__ == "__main__":
             "SELECT id, name FROM states WHERE name='{}' ORDER BY id ASC".format(state_name))
     query_rows = cur.fetchall()
     for row in query_rows:
-        print(row)
+        if (row[1] == state_name):
+            print(row)
     cur.close()
     conn.close()
