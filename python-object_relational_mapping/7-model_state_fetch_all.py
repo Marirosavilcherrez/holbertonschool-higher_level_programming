@@ -10,14 +10,14 @@ if __name__ == "__main__":
     db_user = "root"
     db_password = "root"
     db_port = 3306
+    db_host = "localhost"
     db_name = "hbtn_0e_6_usa"
+    db_url = f"mysql+mysqldb://{db_user}:{db_password}@{db_host}:\
+             {db_port}/{db_name}"
 
-engine = create_engine(
-    'mysql+mysqldb://{}:{}@localhost:{}/{}'.format(db_user,\
-            db_password, db_port, db_name), pool_pre_ping=True)
-
-Session = sessionmaker(bind=engine)
-session = Session()
-for state in session.query(State).order_by(State.id).all():
-    print("{}: {}".format(state.id, state.name))
-session.close()
+    engine = create_engine(db_url, pool_pre_ping=True)
+    Session = sessionmaker(bind=engine)
+    session = Session()
+    for state in session.query(State).order_by(State.id).all():
+        print("{}: {}".format(state.id, state.name))
+    session.close()
