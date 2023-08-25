@@ -16,12 +16,11 @@ if __name__ == "__main__":
         )
     state_name = sys.argv[4]  # state name searched
     cur = conn.cursor()
-    cur.execute(
-            "SELECT id, name FROM states WHERE name='{}'\
-                    ORDER BY id ASC".format(state_name))
+    query = "SELECT id, name FROM states WHERE name=%s\
+                    ORDER BY id ASC"
+    cur.execute(query, (state_name,))
     query_rows = cur.fetchall()
     for row in query_rows:
-        if (row[1] == state_name):
-            print(row)
+        print(row)
     cur.close()
     conn.close()
