@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""With ORM that lists all states from the database hbtn_0e_4_usa"""
+"With ORM that lists all states from the database hbtn_0e_4_usa"
 
 from sqlalchemy import Column, Integer, String, create_engine
 from sqlalchemy.ext.declarative import declarative_base
