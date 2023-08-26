@@ -21,9 +21,6 @@ if __name__ == "__main__":
     with Session() as session:
         a_state = session.query(State).filter(State.name.like('%a%'))\
                 .order_by(State.id).all()
-        if not a_state:
-            print("No states with 'a' found in this list")
-        else:
-            for state in a_state:
-                print("{}: {}".format(state.id, state.name))
+        for state in a_state:
+            print("{}: {}".format(state.id, state.name))
     session.close()
