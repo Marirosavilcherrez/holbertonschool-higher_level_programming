@@ -23,5 +23,5 @@ if __name__ == "__main__":
                 .order_by(State.id).all()
         for state in delete_state:
             session.delete(state)
-            session.commit()
+        session.commit()
     session.close()
