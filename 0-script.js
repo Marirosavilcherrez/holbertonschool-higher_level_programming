@@ -1,4 +1,4 @@
-/* Update the text color of the header */
+/* Updates the text color of the header */
 
 const element = document.querySelector("header");
 
