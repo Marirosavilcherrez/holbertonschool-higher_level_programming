@@ -1,4 +1,4 @@
-/* Fetch and displays the value of hello */
+/* Fetch and display the value of hello */
 
 $(document).ready(function() {
     // Wait until document is ready

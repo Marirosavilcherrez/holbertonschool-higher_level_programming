@@ -1,4 +1,4 @@
-/* toggles the class of header element when click the tag */
+/* toggles class of header element when click the tag */
 
 $(document).ready(function() {
     // Wait until document is ready

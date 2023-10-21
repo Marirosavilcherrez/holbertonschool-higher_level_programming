@@ -1,4 +1,4 @@
-/* Script add li element to the list when click */
+/* Script add li element to list when click */
 
 $(document).ready(function() {
     // Wait until document is ready

@@ -1,4 +1,4 @@
-/* Script that fetches the character name from URL */
+/* Script that fetches character name from URL */
 
 $(document).ready(function() {
     // Wait until document is ready

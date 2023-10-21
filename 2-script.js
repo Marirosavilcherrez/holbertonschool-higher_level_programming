@@ -1,4 +1,4 @@
-/* Updates the text color header when click */
+/* Update the text color header when click */
 
 $(document).ready(function() {
     // Wait until document is ready

@@ -1,4 +1,4 @@
-/* Script that fetches and lists the title for all movies */
+/* Script that fetches and list the title for all movies */
 
 $(document).ready(function() {
     // Wait until document is ready

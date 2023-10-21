@@ -1,4 +1,4 @@
-/* Updates the text of the header when click */
+/* Update the text of the header when click */
 
 $(document).ready(function() {
     // Wait until document is ready
